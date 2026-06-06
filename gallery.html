@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Esprit Coiffure | Nos réalisations</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>" type="image/svg+xml">
+  <meta name="description" content="Découvrez les réalisations d'Esprit Coiffure : ombré, balayage, brushing, coloration. Photos et vidéos de notre salon à Marseille.">
+  <link rel="canonical" href="https://espritcoiffure-marseille.fr/gallery.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=optional" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=optional"></noscript>
+  <link rel="stylesheet" href="css/tokens.css?v=1">
+  <link rel="stylesheet" href="css/base.css?v=1">
+  <link rel="stylesheet" href="css/components.css?v=1">
+  <link rel="stylesheet" href="css/layout.css?v=1">
+  <link rel="stylesheet" href="css/esprit.css?v=1">
+  <script src="https://unpkg.com/lucide@0.563.0/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.css" crossorigin="anonymous">
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" crossorigin="anonymous" defer></script>
+  <script src="js/animations.js?v=1" defer></script>
+</head>
+<body>
+
+<a href="#MainContent" class="skip-link">Aller au contenu principal</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <div class="header-inner">
+      <button class="header-icon-btn show-mobile" aria-label="Ouvrir le menu" id="menuToggle">
+        <i data-lucide="menu" style="width:20px;height:20px"></i>
+      </button>
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo.png" alt="Esprit Coiffure" class="header-logo__img" width="140" height="40">
+      </a>
+      <nav class="header-nav hide-mobile">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="about.html" class="nav-link">À propos</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="tarifs.html" class="nav-link">Tarifs</a>
+        <a href="gallery.html" class="nav-link active">Galerie</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:0491013346" class="btn btn--primary btn--sm hide-mobile">
+          <i data-lucide="phone" style="width:15px;height:15px"></i>
+          <span>04 91 01 33 46</span>
+        </a>
+        <a href="https://www.instagram.com/espritcoiffure13/" class="header-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">
+          <i data-lucide="instagram" style="width:20px;height:20px"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer__backdrop" id="navBackdrop"></div>
+  <div class="nav-drawer__panel" role="dialog" aria-label="Navigation">
+    <div class="nav-drawer__header">
+      <span class="nav-drawer__title">Menu</span>
+      <button class="nav-drawer__close" id="navClose" aria-label="Fermer">
+        <i data-lucide="x" style="width:20px;height:20px"></i>
+      </button>
+    </div>
+    <nav class="nav-drawer__links">
+      <a href="index.html" class="nav-drawer__link">Accueil</a>
+      <a href="about.html" class="nav-drawer__link">À propos</a>
+      <a href="services.html" class="nav-drawer__link">Services</a>
+      <a href="tarifs.html" class="nav-drawer__link">Tarifs</a>
+      <a href="gallery.html" class="nav-drawer__link active">Galerie</a>
+      <a href="contact.html" class="nav-drawer__link">Contact</a>
+      <a href="faq.html" class="nav-drawer__link">FAQ</a>
+    </nav>
+    <div class="nav-drawer__footer">
+      <a href="tel:0491013346" class="btn btn--primary btn--full">
+        <i data-lucide="phone" style="width:16px;height:16px"></i>
+        <span>04 91 01 33 46</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<main id="MainContent">
+
+<!-- HERO -->
+<section class="hero hero--page">
+  <img class="hero__bg" src="assets/images/instagram/ombré-hair.jpg" alt="Galerie Esprit Coiffure" loading="eager" fetchpriority="high" decoding="async">
+  <div class="hero__overlay hero__overlay--dark"></div>
+  <div class="container">
+    <div class="hero__content hero__content--center">
+      <p class="hero__label">NOS RÉALISATIONS</p>
+      <h1 class="hero__title">Galerie</h1>
+      <p class="hero__subtitle">Découvrez notre travail à travers photos et vidéos</p>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">PHOTOS</p>
+      <h2 class="section__title">Nos réalisations</h2>
+    </div>
+    <div class="gallery-grid reveal-up">
+      <div class="gallery-item" data-lightbox="assets/images/instagram/ombré-hair.jpg" data-lightbox-alt="Réalisation ombré hair">
+        <img src="assets/images/instagram/ombré-hair.jpg" alt="Réalisation ombré hair" loading="lazy" decoding="async">
+        <div class="gallery-item__overlay">
+          <span>Ombré Hair</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-lightbox="assets/images/instagram/hair-style.jpg" data-lightbox-alt="Style brushing">
+        <img src="assets/images/instagram/hair-style.jpg" alt="Style brushing" loading="lazy" decoding="async">
+        <div class="gallery-item__overlay">
+          <span>Brushing</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-lightbox="assets/images/instagram/salon-work.jpg" data-lightbox-alt="Travail en salon">
+        <img src="assets/images/instagram/salon-work.jpg" alt="Travail en salon" loading="lazy" decoding="async">
+        <div class="gallery-item__overlay">
+          <span>En salon</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-lightbox="assets/images/instagram/coiffure-marseille.jpg" data-lightbox-alt="Ambiance salon">
+        <img src="assets/images/instagram/coiffure-marseille.jpg" alt="Ambiance salon" loading="lazy" decoding="async">
+        <div class="gallery-item__overlay">
+          <span>Ambiance</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-lightbox="assets/images/brushing.jpg" data-lightbox-alt="Brushing professionnel">
+        <img src="assets/images/brushing.jpg" alt="Brushing professionnel" loading="lazy" decoding="async">
+        <div class="gallery-item__overlay">
+          <span>Brushing</span>
+        </div>
+      </div>
+      <div class="gallery-item" data-lightbox="assets/images/ombré-hair.jpg" data-lightbox-alt="Ombré hair réalisation">
+        <img src="assets/images/ombré-hair.jpg" alt="Ombré hair réalisation" loading="lazy" decoding="async">
+        <div class="gallery-item__overlay">
+          <span>Ombré</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDÉOS -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">VIDÉOS</p>
+      <h2 class="section__title">Nos reels</h2>
+    </div>
+    <div class="video-grid reveal-up">
+      <div class="video-card">
+        <video loop muted playsinline preload="none" poster="assets/images/brushing.jpg" class="video-card__video">
+          <source src="assets/videos/reel-ombré-hair.mp4" type="video/mp4">
+        </video>
+        <button class="video-card__play" aria-label="Lire la vidéo">
+          <i data-lucide="play" style="width:32px;height:32px"></i>
+        </button>
+      </div>
+      <div class="video-card">
+        <video loop muted playsinline preload="none" poster="assets/images/hair-style.jpg" class="video-card__video">
+          <source src="assets/videos/reel-hair-brushing.mp4" type="video/mp4">
+        </video>
+        <button class="video-card__play" aria-label="Lire la vidéo">
+          <i data-lucide="play" style="width:32px;height:32px"></i>
+        </button>
+      </div>
+      <div class="video-card">
+        <video loop muted playsinline preload="none" poster="assets/images/salon-work.jpg" class="video-card__video">
+          <source src="assets/videos/reel-4.mp4" type="video/mp4">
+        </video>
+        <button class="video-card__play" aria-label="Lire la vidéo">
+          <i data-lucide="play" style="width:32px;height:32px"></i>
+        </button>
+      </div>
+      <div class="video-card">
+        <video loop muted playsinline preload="none" poster="assets/images/coiffure-marseille.jpg" class="video-card__video">
+          <source src="assets/videos/reel-6.mp4" type="video/mp4">
+        </video>
+        <button class="video-card__play" aria-label="Lire la vidéo">
+          <i data-lucide="play" style="width:32px;height:32px"></i>
+        </button>
+      </div>
+    </div>
+    <div class="section__cta reveal-up">
+      <a href="https://www.instagram.com/espritcoiffure13/" class="btn btn--outline" target="_blank" rel="noopener">
+        <i data-lucide="instagram" style="width:16px;height:16px"></i>
+        <span>Voir plus sur Instagram</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="cta-block reveal-up">
+      <h2 class="cta-block__title">Envie d'un nouveau look ?</h2>
+      <p class="cta-block__subtitle">Prenez rendez-vous dès maintenant</p>
+      <a href="tel:0491013346" class="btn btn--primary btn--xl magnetic-btn">
+        <i data-lucide="phone" style="width:22px;height:22px"></i>
+        <span>04 91 01 33 46</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--brand">
+        <a href="index.html" class="footer-logo">
+          <img src="assets/images/logo.png" alt="Esprit Coiffure" width="120" height="35">
+        </a>
+        <p class="footer-desc">Salon de coiffure femme à Marseille. Experte en blond, coloration, balayage, ombré et cryothérapie capillaire.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Navigation</h4>
+        <ul class="footer-col__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Contact</h4>
+        <ul class="footer-col__links">
+          <li><a href="https://goo.gl/maps/7ZoWA6LsMaovcPE3A" target="_blank" rel="noopener"><i data-lucide="map-pin" style="width:14px;height:14px"></i> 128 Rue de Rome, 13006</a></li>
+          <li><a href="tel:0491013346"><i data-lucide="phone" style="width:14px;height:14px"></i> 04 91 01 33 46</a></li>
+          <li><a href="https://www.instagram.com/espritcoiffure13/" target="_blank" rel="noopener"><i data-lucide="instagram" style="width:14px;height:14px"></i> @espritcoiffure13</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Horaires</h4>
+        <ul class="footer-col__links footer-col__links--hours">
+          <li><span>Lundi – Samedi</span><span>Sur rendez-vous</span></li>
+          <li><span>Dimanche</span><span>Fermé</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Esprit Coiffure. Tous droits réservés.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/espritcoiffure13/" aria-label="Instagram" target="_blank" rel="noopener"><i data-lucide="instagram" style="width:18px;height:18px"></i></a>
+        <a href="https://www.google.com/maps/place/Esprit+Coiffure/@43.2804,5.3807,17z/" aria-label="Google" target="_blank" rel="noopener"><i data-lucide="map" style="width:18px;height:18px"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <i data-lucide="chevron-up" style="width:20px;height:20px"></i>
+</button>
+
+<script src="js/main.js?v=1" defer></script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services — Esprit Coiffure | Brushing, Coloration, Cryothérapie, Hammam</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>" type="image/svg+xml">
+  <meta name="description" content="Découvrez tous les services d'Esprit Coiffure : brushing, coloration, coupe, lissage brésilien, cryothérapie, hammam, épilation au fil, coiffure de mariage.">
+  <link rel="canonical" href="https://espritcoiffure-marseille.fr/services.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=optional" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=optional"></noscript>
+  <link rel="stylesheet" href="css/tokens.css?v=1">
+  <link rel="stylesheet" href="css/base.css?v=1">
+  <link rel="stylesheet" href="css/components.css?v=1">
+  <link rel="stylesheet" href="css/layout.css?v=1">
+  <link rel="stylesheet" href="css/esprit.css?v=1">
+  <script src="https://unpkg.com/lucide@0.563.0/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.css" crossorigin="anonymous">
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" crossorigin="anonymous" defer></script>
+  <script src="js/animations.js?v=1" defer></script>
+</head>
+<body>
+
+<a href="#MainContent" class="skip-link">Aller au contenu principal</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <div class="header-inner">
+      <button class="header-icon-btn show-mobile" aria-label="Ouvrir le menu" id="menuToggle">
+        <i data-lucide="menu" style="width:20px;height:20px"></i>
+      </button>
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo.png" alt="Esprit Coiffure" class="header-logo__img" width="140" height="40">
+      </a>
+      <nav class="header-nav hide-mobile">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="about.html" class="nav-link">À propos</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="tarifs.html" class="nav-link">Tarifs</a>
+        <a href="gallery.html" class="nav-link">Galerie</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:0491013346" class="btn btn--primary btn--sm hide-mobile">
+          <i data-lucide="phone" style="width:15px;height:15px"></i>
+          <span>04 91 01 33 46</span>
+        </a>
+        <a href="https://www.instagram.com/espritcoiffure13/" class="header-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">
+          <i data-lucide="instagram" style="width:20px;height:20px"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer__backdrop" id="navBackdrop"></div>
+  <div class="nav-drawer__panel" role="dialog" aria-label="Navigation">
+    <div class="nav-drawer__header">
+      <span class="nav-drawer__title">Menu</span>
+      <button class="nav-drawer__close" id="navClose" aria-label="Fermer">
+        <i data-lucide="x" style="width:20px;height:20px"></i>
+      </button>
+    </div>
+    <nav class="nav-drawer__links">
+      <a href="index.html" class="nav-drawer__link">Accueil</a>
+      <a href="about.html" class="nav-drawer__link">À propos</a>
+      <a href="services.html" class="nav-drawer__link active">Services</a>
+      <a href="tarifs.html" class="nav-drawer__link">Tarifs</a>
+      <a href="gallery.html" class="nav-drawer__link">Galerie</a>
+      <a href="contact.html" class="nav-drawer__link">Contact</a>
+      <a href="faq.html" class="nav-drawer__link">FAQ</a>
+    </nav>
+    <div class="nav-drawer__footer">
+      <a href="tel:0491013346" class="btn btn--primary btn--full">
+        <i data-lucide="phone" style="width:16px;height:16px"></i>
+        <span>04 91 01 33 46</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<main id="MainContent">
+
+<!-- HERO -->
+<section class="hero hero--page">
+  <img class="hero__bg" src="assets/images/hair-style.jpg" alt="Services Esprit Coiffure" loading="eager" fetchpriority="high" decoding="async">
+  <div class="hero__overlay hero__overlay--dark"></div>
+  <div class="container">
+    <div class="hero__content hero__content--center">
+      <p class="hero__label">NOS PRESTATIONS</p>
+      <h1 class="hero__title">Nos services</h1>
+      <p class="hero__subtitle">Des prestations sur mesure pour sublimer votre beauté naturelle</p>
+    </div>
+  </div>
+</section>
+
+<!-- TRAITEMENTS -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">SOINS</p>
+      <h2 class="section__title">Traitements capillaires</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-cryo.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Cryothérapie Capillaire</h3>
+        <p class="product-card__desc">Anti-âge de la fibre capillaire. Boucles rebondies, cheveux plus doux et brillants.</p>
+        <p class="product-card__price">À partir de 80€</p>
+        <a href="service.html" class="product-card__link">
+          <span>Découvrir</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px"></i>
+        </a>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="droplets" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Soin au Botox</h3>
+        <p class="product-card__desc">Procédé rajeunissant, coup de jeune aux cheveux. Résultat immédiat.</p>
+        <p class="product-card__price">20€ – 40€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="shield" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Soin à la Kératine</h3>
+        <p class="product-card__desc">Cheveux soyeux, disciplinés, faciles à démêler. Protection longue durée.</p>
+        <p class="product-card__price">20€ – 40€</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRUSHING -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">BRUSHING</p>
+      <h2 class="section__title">Brushing & ondulations</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-brushing.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Brushing</h3>
+        <p class="product-card__desc">Cheveux lisses, coiffures disciplinées, volume et brillance au quotidien.</p>
+        <p class="product-card__price">15€ – 30€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="waves" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Wavy Brushing</h3>
+        <p class="product-card__desc">Ondulations naturelles, touche unique. Effet plage ou glamour.</p>
+        <p class="product-card__price">20€ – 40€</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LISSAGE -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">LISSAGE</p>
+      <h2 class="section__title">Lissages professionnels</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-lissage.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Lissage Brésilien</h3>
+        <p class="product-card__desc">Ultra naturel, aussi efficace qu'un lissage chimique. Résultat garanti pendant des mois.</p>
+        <p class="product-card__price">80€ – 130€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="leaf" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Lissage au Tanin</h3>
+        <p class="product-card__desc">Lissage naturel aux tanins. Respecte la fibre capillaire. Douceur absolue.</p>
+        <p class="product-card__price">100€ – 180€</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COUPE & COULEUR -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">COUPE & COULEUR</p>
+      <h2 class="section__title">Coupes et colorations</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-coupe.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Coupe & Brushing</h3>
+        <p class="product-card__desc">Shampoing, soin, coupe et brushing. Le forfait complet pour un look impeccable.</p>
+        <p class="product-card__price">40€ – 60€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="scissors" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Coupe Enfant / Homme</h3>
+        <p class="product-card__desc">Les hommes et les garçons ont leur place chez Esprit Coiffure.</p>
+        <p class="product-card__price">12€ – 15€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-couleur.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Coloration & Brushing</h3>
+        <p class="product-card__desc">Shampoing relaxant, soin, couleur, brushing. Expertise en blond.</p>
+        <p class="product-card__price">40€ – 70€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="palette" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Mèches</h3>
+        <p class="product-card__desc">Mèches avec coupe, brushing, shampoing. Éclat et dimension.</p>
+        <p class="product-card__price">80€ – 120€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="sun" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Ombré Hair</h3>
+        <p class="product-card__desc">Shampoing, soin, ombré, coupe, brushing. Dégradé naturel et tendance.</p>
+        <p class="product-card__price">À partir de 140€</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÉPILATION -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">ÉPILATION</p>
+      <h2 class="section__title">Épilation au fil</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="smile" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Épilation Fil Lèvres</h3>
+        <p class="product-card__desc">Lèvres douces, précision parfaite. Technique traditionnelle.</p>
+        <p class="product-card__price">À partir de 7€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="eye" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Épilation Fil Sourcils</h3>
+        <p class="product-card__desc">Sourcils toujours parfaits. Forme naturelle et nette.</p>
+        <p class="product-card__price">À partir de 10€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="user" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Épilation Fil Visage</h3>
+        <p class="product-card__desc">Fil du visage complet. Peau douce et nette.</p>
+        <p class="product-card__price">À partir de 25€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="brush" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Teinte des Sourcils</h3>
+        <p class="product-card__desc">Teinte végétale pour des sourcils définis et naturels.</p>
+        <p class="product-card__price">À partir de 10€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="user-check" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Barbe Homme</h3>
+        <p class="product-card__desc">Service barbier. Taille, entretien, soin de la barbe.</p>
+        <p class="product-card__price">À partir de 12€</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HAMMAM -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">HAMMAM</p>
+      <h2 class="section__title">Rituels hammam</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-hammam.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Hammam & Gommage</h3>
+        <p class="product-card__desc">Tradition marocaine, 1001 nuits. Détente, purification et gommage du corps.</p>
+        <p class="product-card__price">25€</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="wind" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Hammam & Brushing</h3>
+        <p class="product-card__desc">Le trio gagnant : hammam relaxant, gommage et brushing. Pure détente.</p>
+        <p class="product-card__price">35€</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARIAGE -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">MARIAGE</p>
+      <h2 class="section__title">Coiffure de mariage</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-mariage.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Coiffure de Mariage</h3>
+        <p class="product-card__desc">Lissage, brushing, coloration pour le jour J. Devis personnalisé pour la mariée.</p>
+        <p class="product-card__price">Sur devis</p>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <i data-lucide="sparkles" style="width:32px;height:32px"></i>
+        </div>
+        <h3 class="product-card__name">Wavy Brushing Mariage</h3>
+        <p class="product-card__desc">Mariées d'honneur éblouissantes. Ondulations glamour pour le grand jour.</p>
+        <p class="product-card__price">20€ – 40€</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="cta-block reveal-up">
+      <h2 class="cta-block__title">Besoin d'un devis ?</h2>
+      <p class="cta-block__subtitle">Contactez-nous pour un devis personnalisé</p>
+      <a href="tel:0491013346" class="btn btn--primary btn--xl magnetic-btn">
+        <i data-lucide="phone" style="width:22px;height:22px"></i>
+        <span>04 91 01 33 46</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--brand">
+        <a href="index.html" class="footer-logo">
+          <img src="assets/images/logo.png" alt="Esprit Coiffure" width="120" height="35">
+        </a>
+        <p class="footer-desc">Salon de coiffure femme à Marseille. Experte en blond, coloration, balayage, ombré et cryothérapie capillaire.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Navigation</h4>
+        <ul class="footer-col__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Contact</h4>
+        <ul class="footer-col__links">
+          <li><a href="https://goo.gl/maps/7ZoWA6LsMaovcPE3A" target="_blank" rel="noopener"><i data-lucide="map-pin" style="width:14px;height:14px"></i> 128 Rue de Rome, 13006</a></li>
+          <li><a href="tel:0491013346"><i data-lucide="phone" style="width:14px;height:14px"></i> 04 91 01 33 46</a></li>
+          <li><a href="https://www.instagram.com/espritcoiffure13/" target="_blank" rel="noopener"><i data-lucide="instagram" style="width:14px;height:14px"></i> @espritcoiffure13</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Horaires</h4>
+        <ul class="footer-col__links footer-col__links--hours">
+          <li><span>Lundi – Samedi</span><span>Sur rendez-vous</span></li>
+          <li><span>Dimanche</span><span>Fermé</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Esprit Coiffure. Tous droits réservés.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/espritcoiffure13/" aria-label="Instagram" target="_blank" rel="noopener"><i data-lucide="instagram" style="width:18px;height:18px"></i></a>
+        <a href="https://www.google.com/maps/place/Esprit+Coiffure/@43.2804,5.3807,17z/" aria-label="Google" target="_blank" rel="noopener"><i data-lucide="map" style="width:18px;height:18px"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <i data-lucide="chevron-up" style="width:20px;height:20px"></i>
+</button>
+
+<script src="js/main.js?v=1" defer></script>
+</body>
+</html>

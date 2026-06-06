@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esprit Coiffure — Salon de coiffure à Marseille | Brushing, Coloration, Cryothérapie</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✂️</text></svg>" type="image/svg+xml">
+  <meta name="description" content="Salon de coiffure femme à Marseille. Experte en blond, coloration, balayage, ombré. Cryothérapie, hammam, coiffure de mariage. 128 Rue de Rome, 13006 Marseille.">
+  <meta property="og:title" content="Esprit Coiffure — Salon de coiffure à Marseille">
+  <meta property="og:description" content="Expertise en blond, coloration, balayage, ombré. Cryothérapie capillaire. Prix abordables.">
+  <meta property="og:image" content="assets/images/brushing.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://espritcoiffure-marseille.fr/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://espritcoiffure-marseille.fr/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=optional" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:ital,wght@0,400;0,700;1,400&display=optional"></noscript>
+
+  <link rel="stylesheet" href="css/tokens.css?v=1">
+  <link rel="stylesheet" href="css/base.css?v=1">
+  <link rel="stylesheet" href="css/components.css?v=1">
+  <link rel="stylesheet" href="css/layout.css?v=1">
+  <link rel="stylesheet" href="css/esprit.css?v=1">
+
+  <script src="https://unpkg.com/lucide@0.563.0/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.3.23/dist/lenis.min.css" crossorigin="anonymous">
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js" crossorigin="anonymous" defer></script>
+  <script src="js/animations.js?v=1" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Esprit Coiffure",
+    "alternateName": "Brushing Bar",
+    "description": "Salon de coiffure femme à Marseille. Experte en blond, coloration, balayage, ombré, cryothérapie capillaire.",
+    "url": "https://espritcoiffure-marseille.fr",
+    "telephone": "+33491013346",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "128 Rue de Rome",
+      "addressLocality": "Marseille",
+      "postalCode": "13006",
+      "addressCountry": "FR"
+    },
+    "openingHours": "Mo-Sa",
+    "priceRange": "€€",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "12000"
+    },
+    "sameAs": [
+      "https://www.instagram.com/espritcoiffure13/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<a href="#MainContent" class="skip-link">Aller au contenu principal</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <div class="header-inner">
+      <button class="header-icon-btn show-mobile" aria-label="Ouvrir le menu" id="menuToggle">
+        <i data-lucide="menu" style="width:20px;height:20px"></i>
+      </button>
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/logo.png" alt="Esprit Coiffure" class="header-logo__img" width="140" height="40">
+      </a>
+      <nav class="header-nav hide-mobile">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="about.html" class="nav-link">À propos</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="tarifs.html" class="nav-link">Tarifs</a>
+        <a href="gallery.html" class="nav-link">Galerie</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a href="tel:0491013346" class="btn btn--primary btn--sm hide-mobile">
+          <i data-lucide="phone" style="width:15px;height:15px"></i>
+          <span>04 91 01 33 46</span>
+        </a>
+        <a href="https://www.instagram.com/espritcoiffure13/" class="header-icon-btn" aria-label="Instagram" target="_blank" rel="noopener">
+          <i data-lucide="instagram" style="width:20px;height:20px"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav drawer -->
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <div class="nav-drawer__backdrop" id="navBackdrop"></div>
+  <div class="nav-drawer__panel" role="dialog" aria-label="Navigation">
+    <div class="nav-drawer__header">
+      <span class="nav-drawer__title">Menu</span>
+      <button class="nav-drawer__close" id="navClose" aria-label="Fermer">
+        <i data-lucide="x" style="width:20px;height:20px"></i>
+      </button>
+    </div>
+    <nav class="nav-drawer__links">
+      <a href="index.html" class="nav-drawer__link active">Accueil</a>
+      <a href="about.html" class="nav-drawer__link">À propos</a>
+      <a href="services.html" class="nav-drawer__link">Services</a>
+      <a href="tarifs.html" class="nav-drawer__link">Tarifs</a>
+      <a href="gallery.html" class="nav-drawer__link">Galerie</a>
+      <a href="contact.html" class="nav-drawer__link">Contact</a>
+      <a href="faq.html" class="nav-drawer__link">FAQ</a>
+    </nav>
+    <div class="nav-drawer__footer">
+      <a href="tel:0491013346" class="btn btn--primary btn--full">
+        <i data-lucide="phone" style="width:16px;height:16px"></i>
+        <span>04 91 01 33 46</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<main id="MainContent">
+
+<!-- ============================================================
+     1. HERO — Full-screen video
+============================================================ -->
+<section class="hero hero--full">
+  <video class="hero__video" autoplay loop muted playsinline preload="auto" poster="assets/images/brushing.jpg">
+    <source src="assets/videos/reel-ombré-hair.mp4" type="video/mp4">
+  </video>
+  <div class="hero__overlay hero__overlay--dark"></div>
+  <div class="container">
+    <div class="hero__content">
+      <p class="hero__label">Esprit Coiffure — 128 Rue de Rome, Marseille</p>
+      <h1 class="hero__title">L'art de sublimer chaque femme.</h1>
+      <p class="hero__subtitle">Votre salon de coiffure à Marseille — Experte en blond, coloration, balayage, ombré et cryothérapie capillaire.</p>
+      <div class="hero__actions">
+        <a href="tel:0491013346" class="btn btn--primary btn--lg magnetic-btn">
+          <i data-lucide="phone" style="width:18px;height:18px"></i>
+          <span>Prendre rendez-vous</span>
+        </a>
+        <a href="services.html" class="btn btn--ghost btn--lg">Découvrir nos services</a>
+      </div>
+      <div class="hero__trust">
+        <div class="hero__trust-item">
+          <i data-lucide="clock" style="width:15px;height:15px"></i>
+          <span>Lun – Sam</span>
+        </div>
+        <div class="hero__trust-item">
+          <i data-lucide="instagram" style="width:15px;height:15px"></i>
+          <span>7 174 followers</span>
+        </div>
+        <div class="hero__trust-item">
+          <i data-lucide="sparkles" style="width:15px;height:15px"></i>
+          <span>Experte en blond</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll-indicator">
+    <span class="scroll-bob">
+      <i data-lucide="chevron-down" style="width:20px;height:20px"></i>
+    </span>
+  </div>
+</section>
+
+<!-- ============================================================
+     2. MARQUEE
+============================================================ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span class="marquee__content">BRUSHING &bull; COUPE &bull; COLORATION &bull; CRYOTHÉRAPIE &bull; HAMMAM &bull; MARIAGE &bull; ÉPILATION &bull; LISSAGE &bull; </span>
+    <span class="marquee__content">BRUSHING &bull; COUPE &bull; COLORATION &bull; CRYOTHÉRAPIE &bull; HAMMAM &bull; MARIAGE &bull; ÉPILATION &bull; LISSAGE &bull; </span>
+  </div>
+</div>
+
+<!-- ============================================================
+     3. NOTRE PHILOSOPHIE — Split section
+============================================================ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="split split--text-img">
+      <div class="split__text reveal-up">
+        <p class="section__label">NOTRE PHILOSOPHIE</p>
+        <h2 class="section__title">L'art de sublimer chaque femme</h2>
+        <p class="section__text">Experte en blond, techniques de coloration, balayage, ombré, patine sur devis. Chez Esprit Coiffure, nous croyons que chaque femme mérite de se sentir belle et en confiance.</p>
+        <p class="section__text">Nous sommes ouverts du lundi au samedi, avec des prix abordables pour tous les budgets. Notre salon au cœur du 6e arrondissement de Marseille vous accueille dans une ambiance chaleureuse et professionnelle.</p>
+        <a href="about.html" class="btn btn--outline">
+          <span>En savoir plus</span>
+          <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+        </a>
+      </div>
+      <div class="split__media reveal-up">
+        <div class="img-wrapper img-wrapper--rounded">
+          <img src="assets/images/ombré-hair.jpg" alt="Réalisation ombré hair au salon Esprit Coiffure" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     4. CRYOTHÉRAPIE — Split inversé
+============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="split split--img-text">
+      <div class="split__media reveal-up">
+        <div class="img-wrapper img-wrapper--rounded">
+          <video autoplay loop muted playsinline preload="none" poster="assets/images/hair-style.jpg">
+            <source src="assets/videos/reel-5.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="split__text reveal-up">
+        <p class="section__label">RÉVOLUTION CAPILLAIRE</p>
+        <h2 class="section__title">La cryothérapie pour cheveux</h2>
+        <p class="section__text">La cryothérapie est LA révolution en ce qui concerne les soins capillaires. Elle produit un effet anti-âge de la fibre capillaire, et aide aussi à les rendre plus doux et brillants.</p>
+        <p class="section__price">
+          <span class="section__price-label">À partir de</span>
+          <span class="section__price-value">80€</span>
+        </p>
+        <a href="service.html" class="btn btn--primary magnetic-btn">
+          <span>Découvrir</span>
+          <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     5. NOS PRESTATIONS — Grid 6 cards
+============================================================ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">NOS PRESTATIONS</p>
+      <h2 class="section__title">Des services sur mesure</h2>
+    </div>
+    <div class="product-grid product-grid--3">
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-brushing.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Brushing</h3>
+        <p class="product-card__desc">Cheveux lisses, coiffures disciplinées, volume et brillance.</p>
+        <p class="product-card__price">15€ – 30€</p>
+        <a href="services.html" class="product-card__link">
+          <span>En savoir plus</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px"></i>
+        </a>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-coupe.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Coupe & Brushing</h3>
+        <p class="product-card__desc">Shampoing, soin, coupe et brushing — le forfait complet.</p>
+        <p class="product-card__price">40€ – 60€</p>
+        <a href="services.html" class="product-card__link">
+          <span>En savoir plus</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px"></i>
+        </a>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-couleur.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Coloration & Brushing</h3>
+        <p class="product-card__desc">Shampoing relaxant, soin, couleur, brushing. Expertise en blond.</p>
+        <p class="product-card__price">40€ – 70€</p>
+        <a href="services.html" class="product-card__link">
+          <span>En savoir plus</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px"></i>
+        </a>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-lissage.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Lissage Brésilien</h3>
+        <p class="product-card__desc">Ultra naturel, aussi efficace qu'un lissage chimique. Résultat garanti.</p>
+        <p class="product-card__price">80€ – 130€</p>
+        <a href="services.html" class="product-card__link">
+          <span>En savoir plus</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px"></i>
+        </a>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-hammam.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Hammam & Gommage</h3>
+        <p class="product-card__desc">Tradition marocaine, 1001 nuits. Détente et purification.</p>
+        <p class="product-card__price">25€</p>
+        <a href="services.html" class="product-card__link">
+          <span>En savoir plus</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px"></i>
+        </a>
+      </div>
+      <div class="product-card tilt-card reveal-up">
+        <div class="product-card__icon">
+          <img src="assets/images/icone-mariage.png" alt="" width="48" height="48" loading="lazy" decoding="async">
+        </div>
+        <h3 class="product-card__name">Coiffure de Mariage</h3>
+        <p class="product-card__desc">Lissage, brushing, coloration pour le jour J. Devis personnalisé.</p>
+        <p class="product-card__price">Sur devis</p>
+        <a href="services.html" class="product-card__link">
+          <span>En savoir plus</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px"></i>
+        </a>
+      </div>
+    </div>
+    <div class="section__cta reveal-up">
+      <a href="services.html" class="btn btn--outline btn--lg">
+        <span>Voir tous les services</span>
+        <i data-lucide="arrow-right" style="width:16px;height:16px"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     6. TÉMOIGNAGES
+============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">TÉMOIGNAGES</p>
+      <h2 class="section__title">Ce que disent nos clientes</h2>
+    </div>
+    <div class="review-grid">
+      <div class="review-card reveal-up">
+        <div class="review-card__stars">
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+        </div>
+        <p class="review-card__text">"Dounia est une vraie artiste ! Mon ombré est parfait, exactement ce que je voulais. Le salon est super agréable et l'équipe très professionnelle."</p>
+        <div class="review-card__author">
+          <span class="review-card__name">Sarah M.</span>
+          <span class="review-card__badge">
+            <i data-lucide="check-circle" style="width:12px;height:12px"></i>
+            Vérifié Google
+          </span>
+        </div>
+      </div>
+      <div class="review-card reveal-up">
+        <div class="review-card__stars">
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+        </div>
+        <p class="review-card__text">"Je recommande à 100% ! La cryothérapie a transformé mes cheveux. Ils sont plus doux et brillants que jamais. Merci Esprit Coiffure !"</p>
+        <div class="review-card__author">
+          <span class="review-card__name">Léa B.</span>
+          <span class="review-card__badge">
+            <i data-lucide="check-circle" style="width:12px;height:12px"></i>
+            Vérifié Google
+          </span>
+        </div>
+      </div>
+      <div class="review-card reveal-up">
+        <div class="review-card__stars">
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+          <i data-lucide="star" style="width:16px;height:16px"></i>
+        </div>
+        <p class="review-card__text">"Le hammam + brushing est un pur moment de détente. L'ambiance du salon est incroyable et les prix très corrects pour la qualité du service."</p>
+        <div class="review-card__author">
+          <span class="review-card__name">Nadia K.</span>
+          <span class="review-card__badge">
+            <i data-lucide="check-circle" style="width:12px;height:12px"></i>
+            Vérifié Google
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="section__cta reveal-up">
+      <a href="https://www.google.com/maps/place/Esprit+Coiffure/@43.2804,5.3807,17z/" class="btn btn--ghost" target="_blank" rel="noopener">
+        <span>Voir tous les avis</span>
+        <i data-lucide="external-link" style="width:14px;height:14px"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     7. GALERIE INSTAGRAM
+============================================================ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header reveal-up">
+      <p class="section__label">SUIVEZ-NOUS</p>
+      <h2 class="section__title">@espritcoiffure13</h2>
+    </div>
+    <div class="insta-grid reveal-up">
+      <a href="https://www.instagram.com/espritcoiffure13/" class="insta-grid__item" target="_blank" rel="noopener">
+        <img src="assets/images/ombré-hair.jpg" alt="Réalisations ombré hair au salon" loading="lazy" decoding="async">
+        <div class="insta-grid__overlay">
+          <i data-lucide="instagram" style="width:24px;height:24px"></i>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/espritcoiffure13/" class="insta-grid__item" target="_blank" rel="noopener">
+        <img src="assets/images/hair-style.jpg" alt="Style et brushing au salon" loading="lazy" decoding="async">
+        <div class="insta-grid__overlay">
+          <i data-lucide="instagram" style="width:24px;height:24px"></i>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/espritcoiffure13/" class="insta-grid__item" target="_blank" rel="noopener">
+        <img src="assets/images/salon-work.jpg" alt="Travail en salon Esprit Coiffure" loading="lazy" decoding="async">
+        <div class="insta-grid__overlay">
+          <i data-lucide="instagram" style="width:24px;height:24px"></i>
+        </div>
+      </a>
+      <a href="https://www.instagram.com/espritcoiffure13/" class="insta-grid__item" target="_blank" rel="noopener">
+        <img src="assets/images/coiffure-marseille.jpg" alt="Ambiance salon à Marseille" loading="lazy" decoding="async">
+        <div class="insta-grid__overlay">
+          <i data-lucide="instagram" style="width:24px;height:24px"></i>
+        </div>
+      </a>
+    </div>
+    <div class="section__cta reveal-up">
+      <a href="https://www.instagram.com/espritcoiffure13/" class="btn btn--outline" target="_blank" rel="noopener">
+        <i data-lucide="instagram" style="width:16px;height:16px"></i>
+        <span>Suivez @espritcoiffure13</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     8. CTA RÉSERVATION
+============================================================ -->
+<section class="section section--dark">
+  <div class="container">
+    <div class="cta-block reveal-up">
+      <h2 class="cta-block__title">Prenez rendez-vous</h2>
+      <p class="cta-block__subtitle">Appelez-nous ou passez au salon</p>
+      <a href="tel:0491013346" class="btn btn--primary btn--xl magnetic-btn">
+        <i data-lucide="phone" style="width:22px;height:22px"></i>
+        <span>04 91 01 33 46</span>
+      </a>
+      <div class="cta-block__info">
+        <p><i data-lucide="map-pin" style="width:16px;height:16px"></i> 128 Rue de Rome, 13006 Marseille</p>
+        <p><i data-lucide="clock" style="width:16px;height:16px"></i> Lundi au Samedi</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col footer-col--brand">
+        <a href="index.html" class="footer-logo">
+          <img src="assets/images/logo.png" alt="Esprit Coiffure" width="120" height="35">
+        </a>
+        <p class="footer-desc">Salon de coiffure femme à Marseille. Experte en blond, coloration, balayage, ombré et cryothérapie capillaire.</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Navigation</h4>
+        <ul class="footer-col__links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="tarifs.html">Tarifs</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Contact</h4>
+        <ul class="footer-col__links">
+          <li><a href="https://goo.gl/maps/7ZoWA6LsMaovcPE3A" target="_blank" rel="noopener"><i data-lucide="map-pin" style="width:14px;height:14px"></i> 128 Rue de Rome, 13006</a></li>
+          <li><a href="tel:0491013346"><i data-lucide="phone" style="width:14px;height:14px"></i> 04 91 01 33 46</a></li>
+          <li><a href="https://www.instagram.com/espritcoiffure13/" target="_blank" rel="noopener"><i data-lucide="instagram" style="width:14px;height:14px"></i> @espritcoiffure13</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col__title">Horaires</h4>
+        <ul class="footer-col__links footer-col__links--hours">
+          <li><span>Lundi – Samedi</span><span>Sur rendez-vous</span></li>
+          <li><span>Dimanche</span><span>Fermé</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Esprit Coiffure. Tous droits réservés.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/espritcoiffure13/" aria-label="Instagram" target="_blank" rel="noopener"><i data-lucide="instagram" style="width:18px;height:18px"></i></a>
+        <a href="https://www.google.com/maps/place/Esprit+Coiffure/@43.2804,5.3807,17z/" aria-label="Google" target="_blank" rel="noopener"><i data-lucide="map" style="width:18px;height:18px"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <i data-lucide="chevron-up" style="width:20px;height:20px"></i>
+</button>
+
+<script src="js/main.js?v=1" defer></script>
+</body>
+</html>

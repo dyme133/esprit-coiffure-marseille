@@ -1,0 +1,164 @@
+/* ==========================================================================
+   TOKENS — Esprit Coiffure (Brun Chaud)
+   ========================================================================== */
+
+:root {
+  /* — Primary — */
+  --c-primary: #8B5E3C;
+  --c-primary-h: #6D4A2F;
+  --c-primary-l: #F5E6D3;
+  --c-primary-rgb: 139, 94, 60;
+
+  /* — Secondary — */
+  --c-secondary: #C9A87C;
+  --c-secondary-h: #B8976B;
+  --c-secondary-l: #F0E4D3;
+  --c-secondary-rgb: 201, 168, 124;
+
+  /* — Backgrounds — */
+  --c-bg: #FDF8F3;
+  --c-bg-alt: #F9F0E8;
+  --c-bg-card: #FFFFFF;
+  --c-bg-dark: #2C1E14;
+  --c-bg-dark-rgb: 44, 30, 20;
+
+  /* — Text — */
+  --c-text: #2C2220;
+  --c-text-2: #5A4A42;
+  --c-text-3: #8A7A72;
+  --c-text-inv: #FFFFFF;
+
+  /* — Borders — */
+  --c-border: #E8DDD4;
+  --c-border-l: #F3EDE8;
+
+  /* — Feedback — */
+  --c-error: #E84040;
+  --c-success: #7FB685;
+  --c-warning: #E8B84A;
+  --c-stars: #FFB800;
+
+  /* — Extra Colors — */
+  --c-gold: #C4A156;
+  --c-poudre: #F0E0D8;
+  --c-teal: #3A7A7A;
+
+  /* — Spacing (8px grid) — */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+
+  /* — Border Radius — */
+  --r-xs: 0.25rem;
+  --r-sm: 0.5rem;
+  --r-md: 0.875rem;
+  --r-lg: 1.25rem;
+  --r-xl: 1.75rem;
+  --r-2xl: 2.5rem;
+  --r-full: 9999px;
+
+  /* — Shadows — */
+  --sh-xs: 0 1px 3px rgba(44, 30, 20, 0.06);
+  --sh-sm: 0 2px 8px rgba(44, 30, 20, 0.08);
+  --sh-md: 0 4px 20px rgba(44, 30, 20, 0.09);
+  --sh-lg: 0 8px 40px rgba(44, 30, 20, 0.11);
+  --sh-xl: 0 16px 64px rgba(44, 30, 20, 0.13);
+  --sh-card-h: 0 8px 32px rgba(139, 94, 60, 0.20);
+
+  /* — Transitions — */
+  --t-fast: 150ms ease;
+  --t-base: 250ms ease;
+  --t-slow: 400ms ease;
+  --t-spring: 320ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* — Typography — */
+  --f-heading: 'Playfair Display', Georgia, serif;
+  --f-body: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ff-display: var(--f-heading);
+  --ff-body: var(--f-body);
+
+  --fs-xs: 0.6875rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.3125rem;
+  --fs-xl: 1.5625rem;
+  --fs-2xl: 1.875rem;
+  --fs-3xl: 2.375rem;
+  --fs-4xl: 3rem;
+  --fs-5xl: 3.75rem;
+  --fs-6xl: 4.5rem;
+
+  --fs-h1: clamp(2.5rem, 5vw, 3.5rem);
+  --fs-h2: clamp(2rem, 4vw, 2.5rem);
+  --fs-h3: clamp(1.5rem, 3vw, 1.75rem);
+  --fs-h4: 1.25rem;
+  --fs-body: 1rem;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+  --fw-xbold: 800;
+
+  --lh-tight: 1.15;
+  --lh-snug: 1.25;
+  --lh-normal: 1.6;
+  --lh-loose: 1.8;
+
+  --ls-tight: -0.02em;
+  --ls-normal: 0em;
+  --ls-wide: 0.06em;
+  --ls-caps: 0.15em;
+
+  /* — Layout — */
+  --w-max: 1360px;
+  --w-wide: 1160px;
+  --w-normal: 920px;
+  --w-narrow: 640px;
+  --max-w: 1280px;
+  --max-w-narrow: 860px;
+
+  --header-h: 72px;
+  --header-h-mobile: 60px;
+  --header-h-scrolled: 60px;
+  --annbar-h: 40px;
+
+  /* — Z-index — */
+  --z-base: 0;
+  --z-raised: 10;
+  --z-drop: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-search: 10000;
+  --z-popup: 10001;
+
+  /* — Glass / Blur — */
+  --glass-bg: rgba(253, 248, 243, 0.78);
+  --glass-border: rgba(139, 94, 60, 0.15);
+  --glass-blur: blur(20px) saturate(180%);
+
+  /* — Dark backgrounds — */
+  --c-bg-midnight: #0E0A06;
+  --c-bg-warm-dark: #1A0E08;
+
+  /* — Gradients — */
+  --g-primary: linear-gradient(135deg, #C9A87C 0%, #8B5E3C 100%);
+  --g-warm: linear-gradient(135deg, #FDF8F3 0%, #F9F0E8 100%);
+
+  /* — Glow shadows — */
+  --sh-glow-sm: 0 4px 20px rgba(139, 94, 60, 0.30);
+  --sh-glow-md: 0 8px 36px rgba(139, 94, 60, 0.40);
+}
